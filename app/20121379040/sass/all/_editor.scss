@@ -1,0 +1,42 @@
+@import"mixins";
+
+#editor {
+    overflow:auto; 
+    border:1px solid silver; 
+    border-radius:3px; 
+    min-height:200px;
+    box-shadow: inset 0 0 10px silver;
+    padding:1em;
+
+    &:focus{
+        transition:border linear .2s,box-shadow linear .5s;
+        border-color:rgba(39,207,195,.75);
+        box-shadow:0 0 15px rgba(39,207,195,.5); 
+    }
+}
+
+.editor-group {
+	@include flexbox;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    a{
+        text-decoration: none;
+        color: #333;
+        
+        &:hover {
+            color: #27CFC3;
+        }
+
+        &:active {
+            color :darken(#27CFC3, 40%);
+        }
+    }
+
+    .icon {
+        margin: 2px;
+	    padding: 10px 12px;
+	    font-weight: bolder;
+    }
+}

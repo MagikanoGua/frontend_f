@@ -1,0 +1,60 @@
+@import"mixins";
+
+.button-group{
+    @include flexbox;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+
+	.square-button {
+        margin: 5px 10px;
+	    padding: 10px 12px;
+        border-radius: 3px;
+        border-color: #c62b2b;
+	    font-weight: bolder;
+	    box-shadow: inset 1px 1px 0px 0px rgba(255,255,255,0.3);
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+        &:active {
+            text-shadow: none;
+        }
+
+    }
+
+    .green {
+        background-color:#50f072 ;
+        &:hover{
+           background: darken(#50f072, 15%);
+        }
+    }
+
+    .blue {
+        background-color:#50aef0 ;
+        &:hover{
+           background: darken(#50aef0, 15%);
+        }
+    }
+
+    .red {
+        background-color:#f05050 ;
+        &:hover{
+           background: darken(#f05050, 15%);
+        }
+    }
+
+    .yellow {
+        background-color:#f0df50 ;
+        &:hover{
+           background: darken(#f0df50, 15%);
+        }
+    }
+}
+
+
+
+
+

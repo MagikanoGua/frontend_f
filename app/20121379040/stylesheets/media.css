@@ -1,0 +1,49 @@
+@media all and (max-width: 800px) {
+  /* line 2, ../sass/media.scss */
+  .container {
+    justify-content: space-around;
+  }
+
+  /* line 6, ../sass/media.scss */
+  .menu {
+    justify-content: center;
+  }
+
+  /* line 10, ../sass/media.scss */
+  form {
+    width: 30%;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 16, ../sass/media.scss */
+  .container {
+    flex-flow: column wrap;
+    margin-top: 200px;
+  }
+  /* line 19, ../sass/media.scss */
+  .container .item {
+    margin-bottom: 5px;
+  }
+
+  /* line 24, ../sass/media.scss */
+  .menu {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  /* line 28, ../sass/media.scss */
+  .menu a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  /* line 35, ../sass/media.scss */
+  .menu li:last-of-type a {
+    border-bottom: none;
+  }
+
+  /* line 41, ../sass/media.scss */
+  form {
+    width: 20%;
+  }
+}

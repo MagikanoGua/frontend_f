@@ -1,0 +1,44 @@
+@media all and (max-width: 800px) {
+    .container {
+        justify-content: space-around;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    form {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .container {
+        flex-flow: column wrap;
+        margin-top: 200px;
+        .item {
+            margin-bottom: 5px;
+        }
+    }
+
+    .menu {
+        flex-flow: column wrap;
+        padding: 0;
+
+        a { 
+            text-align: center; 
+            padding: 10px;
+            border-top: 1px solid rgba(255,255,255,0.3); 
+            border-bottom: 1px solid rgba(0,0,0,0.1); 
+          }
+
+        li:last-of-type a {
+            border-bottom: none;            
+        }
+      
+    }
+    
+    form {
+        width: 20%; 
+    }
+}
